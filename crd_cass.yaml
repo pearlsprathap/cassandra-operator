@@ -1,0 +1,17 @@
+apiVersion: apiextensions.k8s.io/v1beta1 
+kind: CustomResourceDefinition 
+metadata: 
+  name: cassandra.socgen.org 
+spec: 
+  scope: Namespaced 
+  group: socgen.org 
+  versions: 
+    - name: v1 
+      served: true 
+      storage: true 
+  names: 
+    kind: Cassandra 
+    plural: cassandra 
+    singular: cassandra
+    shortNames: 
+      - cass 

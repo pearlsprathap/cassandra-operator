@@ -1,0 +1,8 @@
+apiVersion: socgen.org/v1 
+kind: Cassandra 
+metadata: 
+  name: cass-testing
+spec: 
+    image: "cassandra:3.0"
+    nodeport: 30567
+    port: 80
